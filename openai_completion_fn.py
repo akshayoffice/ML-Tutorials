@@ -1,7 +1,7 @@
 import logging
 import os
 from typing import Any
-os.environ["OPENAI_API_KEY"] = "sk-xe4yY6HmC-AIbUkRK27iUPzhisihhTzqap2QU4ue84T3BlbkFJidCVFBINiiC9nOTiXqeQMz1MHgw_O5pjElVIPqwK4A"
+# os.environ["OPENAI_API_KEY"] = ""
 from openai import OpenAI, OpenAIError
 from evals.api import CompletionFn, CompletionResult
 from evals.record import record_sampling
