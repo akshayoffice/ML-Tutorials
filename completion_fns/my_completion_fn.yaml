@@ -1,0 +1,6 @@
+my_completion_fn:
+  class: openai_completion_fn:GPT35TurboCompletionFn
+  args:
+    api_key: "sk-xe4yY6HmC-AIbUkRK27iUPzhisihhTzqap2QU4ue84T3BlbkFJidCVFBINiiC9nOTiXqeQMz1MHgw_O5pjElVIPqwK4A"
+    api_base: "https://api.openai.com/v1"
+    model: "gpt-3.5-turbo"  # Optional, It can be any gpt model

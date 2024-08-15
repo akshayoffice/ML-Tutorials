@@ -1,0 +1,14 @@
+spider-sql:
+  id: spider-sql.dev.v0
+  metrics: [accuracy]
+  description: >
+    Eval that scores SQL code from 194 examples in the Spider Text-to-SQL test dataset. Problems are selected by taking the first 10 problems for each database in the test set. Refer to Yu, Tao, et al. 2018 for detailed dataset information.
+  disclaimer: >
+    Problems are solved zero-shot with no additional prompting other than the schema. Performance may vary with different training strategies or schema formats. Evaluation is done through model grading; SQL code is not executed.
+
+spider-sql.dev.v0:
+  class: evals.elsuite.modelgraded.classify:ModelBasedClassify
+  args:
+    samples_jsonl: sql/spider_sql.jsonl
+    eval_type: cot_classify
+    modelgraded_spec: sql
